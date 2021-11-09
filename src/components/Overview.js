@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './Overview.css'
 
 class Overview extends Component{
     render(){
@@ -6,7 +7,7 @@ class Overview extends Component{
         <ul>
             {
                 this.props.tasks.map((task)=>{
-                    return <li key={task.id}>{this.props.id}{task.text}</li>
+                    return <li className='list' key={task.id}>{this.props.id}{task.text}</li>
                 })
             }
         </ul>
